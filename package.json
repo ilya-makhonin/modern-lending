@@ -1,0 +1,112 @@
+{
+  "name": "basics-react-compile-config",
+  "version": "1.0.0",
+  "description": "Basics config for creating React.js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --colors --watchAll --config=config/jest.config.js",
+    "start": "webpack-dev-server --colors",
+    "light": "webpack --mode development --progress",
+    "build": "webpack --mode production --progress",
+    "watch": "webpack --mode development --watch --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilya-makhonin/basics-react-compile-config.git"
+  },
+  "keywords": [
+    "React.js",
+    "React",
+    "WebPack config",
+    "WebPack",
+    "Babel",
+    "React template"
+  ],
+  "author": {
+    "name": "Ilya (Elias) Makhonin",
+    "email": "noizemkutane77@gmail.com"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ilya-makhonin/basics-frontend-config/issues"
+  },
+  "homepage": "https://github.com/ilya-makhonin/basics-frontend-config#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.5.0",
+    "@hot-loader/react-dom": "^16.8.6",
+    "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.12.4",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "interpolate-html-plugin": "^3.0.0",
+    "jest": "^24.8.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-global-import": "^1.0.6",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "precss": "^4.0.0",
+    "prettier": "1.17.1",
+    "react-hot-loader": "^4.8.4",
+    "react-svg-loader": "^3.0.3",
+    "sass": "^1.19.0",
+    "sass-loader": "^7.1.0",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.2.3",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-manifest-plugin": "^2.0.4"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "react-hot-loader/babel",
+      "@babel/plugin-transform-runtime",
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ],
+      "react-html-attrs"
+    ]
+  }
+}
