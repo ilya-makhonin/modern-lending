@@ -8,7 +8,8 @@
     "start": "webpack-dev-server --colors",
     "light": "webpack --mode development --progress",
     "build": "webpack --mode production --progress",
-    "watch": "webpack --mode development --watch --progress"
+    "watch": "webpack --mode development --watch --progress",
+    "flow": "flow"
   },
   "repository": {
     "type": "git",
@@ -93,7 +94,8 @@
   "babel": {
     "presets": [
       "@babel/preset-env",
-      "@babel/preset-react"
+      "@babel/preset-react",
+      "@babel/preset-flow"
     ],
     "plugins": [
       "react-hot-loader/babel",
